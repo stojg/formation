@@ -14,8 +14,7 @@ type Static interface {
 // that has a position, an orientation and can have a target.
 type Character interface {
 	SetTarget(Static)
-	Position() *Vector3
-	Orientation() *Quaternion
+	Static
 }
 
 // NewManager returns a new formation Manager. It is initialised with anything that can satisfy the
